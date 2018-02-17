@@ -6,7 +6,10 @@
 
 Monitors your network using a Raspberry Pi by hiting external websites.
 
-__Responses__
+
+
+
+## Responses
 
 The response is produced by turning on or fleshing two leds: Red and Green
 
@@ -15,6 +18,14 @@ The response is produced by turning on or fleshing two leds: Red and Green
 - __Green led turned on__ 100% of websites registered returned without problems
 
 - __Green led flashing__ More than 50% of the eligible websites returned without any problems.
+
+
+__Internal Errors__
+
+- __Green and Red flashing 3 times + Green flashes twice__ Problem to update the ```command.py```
+
+
+
 
 
 
@@ -28,9 +39,15 @@ __Run the check__
 
 
 
+
+
+
 __Updating the websites__
 
 	docker run -v `pwd`:/app --rm python:3 bash -c "/bin/bash /app/update.sh"
+
+
+
 
 
 
