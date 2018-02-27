@@ -23,7 +23,9 @@ def main():
     checks.append(mypi.url.check_url("uol.com.br"))
     checks.append(mypi.url.check_url("globo.com"))
     checks.append(mypi.url.check_url("mangar.com.br"))
+
+    checks.append(mypi.url.check_url("esse_dominio_nao_existe_deve_falhar_no_teste.com.br"))
     
     mypi.led.flash_led(checks)
-    
+
 main()
