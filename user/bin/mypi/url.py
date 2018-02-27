@@ -1,4 +1,3 @@
-from urllib2 import urlopen
 import os
 import platform
 
@@ -7,16 +6,15 @@ import platform
 # 
 def check_url(_url):
     val = False
-    # try: 
-    #     request = urlopen(_url)
-    #     val = True
-    #     print("  OK - " + _url)
-    # except:
-    #     print("  !! - " + _url)
     
-    print ' --> ', ping(_url)
-    
+    val = ping(_url)
+    if val:
+        print '  OK - ', _url
+    else:
+        print '  !! - ', _url
+
     return val;
+
 
 
 def ping(host):
