@@ -8,7 +8,7 @@ if os.uname()[1] == "raspberrypi":
 
 def working():
     
-    if os.uname()[1] != "raspberry":
+    if os.uname()[1] != "raspberrypi":
         print("[ working ] - Request sent")    
     else:
         print("Running on a RPi")
