@@ -7,7 +7,6 @@
 import mypi.led
 import mypi.url
 
-
 # 
 # 
 # 
@@ -18,9 +17,10 @@ def main():
 
     checks.append(mypi.url.check_url("http://google.com"))
     checks.append(mypi.url.check_url("http://facebook.com"))
-    checks.append(mypi.url.check_url("http://rga.com"))
+    checks.append(mypi.url.check_url("http://twitter.com"))
     checks.append(mypi.url.check_url("http://uol.com.br"))
-
+    checks.append(mypi.url.check_url("http://globo.com"))
+    
     mypi.led.flash_led(checks)
 
 main()
