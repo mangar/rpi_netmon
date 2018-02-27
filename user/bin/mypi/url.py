@@ -18,7 +18,7 @@ def check_url(_url):
 
 
 def ping(host):
-    response = os.system("ping -c 1 " + host)
+    response = os.system("ping -c 3 " + host)
     if response == 0:
         return True
     else:
