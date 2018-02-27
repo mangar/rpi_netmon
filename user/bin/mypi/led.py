@@ -1,6 +1,30 @@
+import time
+import myos
+import os
+
+
+if os.uname()[1] == "raspberry":
+    import RPi.GPIO as GPIO 
+
 
 def working():
-    print("[ working ] - Request sent")
+    
+    if os.uname()[1] != "raspberry":
+        print("[ working ] - Request sent")    
+    else:
+        print("Running on a RPi")
+    
+
+    # osName = os.uname()
+    # print 'OS Name: ', osName[4]
+    # print 'OS Name: ', osName[1]
+    # print 'OS Name: ', osName
+
+    # print 'isRPi? ', mypy.myos.isRPIi()
+
+
+
+    
 
 
 def error():
@@ -17,6 +41,14 @@ def success_flashing():
 
 def error_tech():
     print("[ error_tech ] - Error Tech")
+
+
+
+def isRPi():
+    isR = False
+    if os.uname()[1] == "raspberrypi":
+        isR = True
+    return isR
 
 
 
