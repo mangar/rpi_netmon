@@ -1,5 +1,4 @@
 import time
-import myos
 import os
 
 
