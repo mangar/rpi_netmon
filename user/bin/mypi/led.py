@@ -2,7 +2,7 @@ import time
 import os
 
 
-if os.uname()[1] == "raspberry":
+if os.uname()[1] == "raspberrypi":
     import RPi.GPIO as GPIO 
 
 
