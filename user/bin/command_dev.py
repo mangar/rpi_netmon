@@ -15,12 +15,15 @@ def main():
 
     mypi.led.working()
 
-    checks.append(mypi.url.check_url("12312qwdqwefd.com"))
-    checks.append(mypi.url.check_url("wdfsd231324.com"))
+    # Global
+    checks.append(mypi.url.check_url("google.com"))
+    checks.append(mypi.url.check_url("facebook.com"))
     checks.append(mypi.url.check_url("twitter.com"))
+    # BR
     checks.append(mypi.url.check_url("uol.com.br"))
     checks.append(mypi.url.check_url("globo.com"))
+    checks.append(mypi.url.check_url("mangar.com.br"))
     
     mypi.led.flash_led(checks)
-
+    
 main()
