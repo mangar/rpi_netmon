@@ -35,7 +35,7 @@ Yo can use a docker machine to test
 
 __Run the check__
 
-	docker run -v `pwd`:/app --rm python:3 python /app/user/bin/command_dev.py
+	docker run -v `pwd`:/app --rm python:2.7 python /app/user/bin/command_dev.py
 
 
 
@@ -44,7 +44,9 @@ __Run the check__
 
 __Updating the websites__
 
-	docker run -v `pwd`:/app --rm python:3 bash -c "/bin/bash /app/update.sh"
+Update the command.py:
+
+	docker run -v `pwd`:/app --rm python:2.7 bash -c "/bin/bash /app/update.sh"
 
 
 
