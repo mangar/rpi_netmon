@@ -9,9 +9,9 @@ def check_url(_url):
     
     val = ping(_url)
     if val:
-        print '  OK - ', _url
+        print '  OK - ', _url, '\n\n'
     else:
-        print '  !! - ', _url
+        print '  !! - ', _url, '\n\n'
 
     return val;
 
