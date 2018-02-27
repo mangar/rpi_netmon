@@ -15,8 +15,8 @@ def main():
 
     mypi.led.working()
 
-    checks.append(mypi.url.check_url("http://google.com"))
-    checks.append(mypi.url.check_url("http://facebook.com"))
+    checks.append(mypi.url.check_url("http://googless.com"))
+    checks.append(mypi.url.check_url("http://facebooksss.com"))
     checks.append(mypi.url.check_url("http://twitter.com"))
     checks.append(mypi.url.check_url("http://uol.com.br"))
     checks.append(mypi.url.check_url("http://globo.com"))
